@@ -1,117 +1,146 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Social Media Dashboard</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="./src/main.tsx"></script>
-    <div> # **Social Media DashBoard**
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: #0078d7;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2, h3 {
+            color: #333;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        a {
+            color: #0078d7;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .image {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .image img {
+            max-width: 100%;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
 
-## **Overview**
-This project introduces enhanced analytics and account management features, providing users with detailed insights and an intuitive interface to manage their accounts.  
-The Social Media Dashboard is a more complex project that involves building a web application for monitoring social media activity. It allows users to view and analyze data from multiple social media platforms. 
-This project will teach you how to work with charts and graphs, manage large datasets, and implement real-time updates.
+<header>
+    <h1>Social Media Dashboard</h1>
+</header>
 
-Key improvements include:  
-- A new **AnalyticsModal** component for detailed analytics.
-- A new **AccountsModal** component for managing connected accounts.
-- Updates to the **QuickActions** component to support modal functionality seamlessly.
+<div class="container">
+    <h2>Overview</h2>
+    <p>
+        This project introduces enhanced analytics and account management features, providing users with detailed insights 
+        and an intuitive interface to manage their accounts. The Social Media Dashboard is a more complex project that involves 
+        building a web application for monitoring social media activity. It allows users to view and analyze data from multiple 
+        social media platforms.
+    </p>
+    <p>
+        This project will teach you how to work with charts and graphs, manage large datasets, and implement real-time updates.
+    </p>
 
----
+    <h2>Features</h2>
+    <h3>1. AnalyticsModal</h3>
+    <ul>
+        <li>Total Engagement Metrics: Overview of user interactions.</li>
+        <li>Average Engagement Rate: Calculated performance average.</li>
+        <li>Platform-Specific Performance: Detailed insights by platform (e.g., web, mobile).</li>
+        <li>Visual Engagement Indicators: Graphical representation of data.</li>
+        <li>Growth Trends: Trends over time for engagement metrics.</li>
+    </ul>
 
-## **Features**
+    <h3>2. AccountsModal</h3>
+    <ul>
+        <li>List of Connected Accounts: View all linked accounts.</li>
+        <li>Current Active Account Indicator: Displays the active account.</li>
+        <li>User Profile Information: Quick access to profile details.</li>
+        <li>Option to Add New Accounts: Easily add more accounts to the system.</li>
+    </ul>
 
-### **1. AnalyticsModal**
-Provides users with in-depth analytics, including:  
-- **Total Engagement Metrics**: Overview of user interactions.  
-- **Average Engagement Rate**: Calculated performance average.  
-- **Platform-Specific Performance**: Detailed insights by platform (e.g., web, mobile).  
-- **Visual Engagement Indicators**: Graphical representation of data.  
-- **Growth Trends**: Trends over time for engagement metrics.
+    <h3>3. QuickActions Updates</h3>
+    <ul>
+        <li>View Analytics: Opens the AnalyticsModal with all metrics.</li>
+        <li>Manage Accounts: Opens the AccountsModal for account management.</li>
+        <li>Authentication State Checks: Ensures secure and authenticated access to features.</li>
+    </ul>
 
-### **2. AccountsModal**
-Allows users to manage their connected accounts effectively:  
-- **List of Connected Accounts**: View all linked accounts.  
-- **Current Active Account Indicator**: Displays the active account.  
-- **User Profile Information**: Quick access to profile details.  
-- **Option to Add New Accounts**: Easily add more accounts to the system.
+    <h2>Installation</h2>
+    <ol>
+        <li>Clone the Repository:
+            <pre><code>git clone &lt;repository-url&gt;<br>cd &lt;project-directory&gt;</code></pre>
+        </li>
+        <li>Install Dependencies:
+            <pre><code>npm install</code></pre>
+        </li>
+        <li>Start the Development Server:
+            <pre><code>npm start</code></pre>
+        </li>
+        <li>Access the Application: Open your browser and navigate to <code>http://localhost:3000</code>.</li>
+    </ol>
 
-### **3. QuickActions Updates**
-Enhanced for better modal handling:  
-- **View Analytics**: Opens the **AnalyticsModal** with all metrics.  
-- **Manage Accounts**: Opens the **AccountsModal** for account management.  
-- **Authentication State Checks**: Ensures secure and authenticated access to features.
+    <h2>Usage</h2>
+    <ol>
+        <li>Sign Up / Log In: Create an account or log in with your credentials.</li>
+        <li>View Analytics: Click on the "View Analytics" button in the QuickActions section to open the analytics dashboard.</li>
+        <li>Manage Accounts: Click on the "Manage Accounts" button in the QuickActions section to view and manage accounts.</li>
+    </ol>
 
----
+    <h2>Testing the Features</h2>
+    <ol>
+        <li>Sign up for a New Account: Use the registration form to create a new account.</li>
+        <li>Log in: Log in with your new account credentials.</li>
+        <li>View Analytics: Click "View Analytics" to see a detailed dashboard with metrics and visualizations.</li>
+        <li>Manage Accounts: Click "Manage Accounts" to access the account management modal.</li>
+    </ol>
 
-## **Installation**
+    <h3>Dashboard View</h3>
+    <div class="image">
+        <img src="https://github.com/user-attachments/assets/e8ddf849-47f8-4c75-b80d-c61a2d9ce946" alt="Dashboard View">
+    </div>
 
-1. **Clone the Repository**  
-   ```bash
-   git clone <repository-url>
-   cd <project-directory>
-   ```
+    <h3>Live Project</h3>
+    <p>
+        <a href="https://socail-media-dashboard.netlify.app/" target="_blank">https://socail-media-dashboard.netlify.app/</a>
+    </p>
 
-2. **Install Dependencies**  
-   ```bash
-   npm install
-   ```
-
-3. **Start the Development Server**  
-   ```bash
-   npm start
-   ```
-
-4. **Access the Application**  
-   Open your browser and navigate to `http://localhost:3000`.
-
----
-
-## **Usage**
-
-1. **Sign Up / Log In**  
-   - Create an account or log in with your credentials.
-
-2. **View Analytics**  
-   - Click on the **"View Analytics"** button in the **QuickActions** section to open the analytics dashboard.
-
-3. **Manage Accounts**  
-   - Click on the **"Manage Accounts"** button in the **QuickActions** section to view and manage accounts.
-
----
-
-## **Testing the Features**
-
-### **Steps to Test**
-1. **Sign up for a New Account**  
-   - Use the registration form to create a new account.
-
-2. **Log in**  
-   - Log in with your new account credentials.
-
-3. **View Analytics**  
-   - Click **"View Analytics"** to see a detailed dashboard with metrics and visualizations.
-
-4. **Manage Accounts**  
-   - Click **"Manage Accounts"** to access the account management modal.
-
----
-
-### Dashboard View
-  - ![image](https://github.com/user-attachments/assets/e8ddf849-47f8-4c75-b80d-c61a2d9ce946)
-### Live project
-( https://socail-media-dashboard.netlify.app/ )
----
-
-## **Future Improvements**
-- Add filters to analytics for custom date ranges.
-- Enable exporting analytics data as CSV.
-- Introduce account-specific analytics views.
-- Add support for integrating third-party account authentication.
+    <h2>Future Improvements</h2>
+    <ul>
+        <li>Add filters to analytics for custom date ranges.</li>
+        <li>Enable exporting analytics data as CSV.</li>
+        <li>Introduce account-specific analytics views.</li>
+        <li>Add support for integrating third-party account authentication.</li>
+    </ul>
 </div>
-  </body>
+<div id="root"></div> <script type="module" src="./src/main.tsx"></script>
+</body>
 </html>
